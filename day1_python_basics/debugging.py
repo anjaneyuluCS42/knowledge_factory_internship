@@ -1,9 +1,15 @@
-a = 10
-b = 20
+# def add_numbers(a, b):
+#     # మనం ఇక్కడ వాల్యూస్ సరిగ్గా ఉన్నాయో లేదో చూద్దాం
+#     print(f"DEBUG: a విలువ {a}, b విలువ {b}") 
+#     return a + b
 
-print("Value of a:", a)
-print("Value of b:", b)
+# result = add_numbers(10, "20") #20 a string
+# print(result)
+# print(print("hello"))
 
-sum = a + b
+def number(a,b):
+    print(a+b)
+    return(a+b)
 
-print("Sum is:", sum)
+x = number(2,3)
+print(x)
