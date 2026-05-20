@@ -1,0 +1,17 @@
+# a = []
+# b = ""
+# print(a is b)
+# print(type(a))
+
+# c  = int("78")
+
+# print(c)
+# print(type(c))
+
+"""a = (input("enter num1: "))
+b = (input("enter num2: "))
+print(a+b)"""
+a = int(10.89)
+b = 2
+c = a+b
+print(c)
