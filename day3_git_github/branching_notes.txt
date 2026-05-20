@@ -1,0 +1,29 @@
+Branching in Git
+
+Branching allows developers to work independently on different features without affecting the main project code.
+
+Advantages of Branching:
+- Parallel development
+- Safe feature testing
+- Better collaboration
+- Easier bug fixing
+
+Important Branch Commands:
+
+1. git branch
+Shows all branches.
+
+2. git branch feature-day3
+Creates a new branch.
+
+3. git checkout feature-day3
+Switches to the created branch.
+
+4. git checkout main
+Returns to the main branch.
+
+5. git merge feature-day3
+Merges feature branch changes into main branch.
+
+Learning Outcome:
+Learned how professional teams use branches for collaborative development.

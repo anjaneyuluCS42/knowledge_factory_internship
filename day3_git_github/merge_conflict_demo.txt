@@ -1,0 +1,19 @@
+Merge Conflict in Git
+
+A merge conflict occurs when two branches modify the same line of code differently and Git cannot automatically decide which version to keep.
+
+Example Scenario:
+- Developer A changes line 5 in main branch.
+- Developer B changes same line 5 in feature branch.
+- During merge, Git detects conflict.
+
+Conflict Resolution Steps:
+1. Identify conflicting files.
+2. Open file and review conflict markers.
+3. Manually choose correct code.
+4. Save file.
+5. Add resolved file using git add.
+6. Commit merged changes.
+
+Importance:
+Understanding merge conflicts helps developers collaborate efficiently in real-world projects.

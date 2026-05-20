@@ -1,0 +1,23 @@
+Collaborative Workflow Using Git and GitHub
+
+Git and GitHub help multiple developers work together efficiently on the same project.
+
+Professional Workflow:
+1. Clone repository
+2. Create feature branch
+3. Make code changes
+4. Commit changes
+5. Push branch to GitHub
+6. Create Pull Request
+7. Review code
+8. Merge changes into main branch
+
+Benefits:
+- Version tracking
+- Team collaboration
+- Secure code management
+- Easy rollback of changes
+- Organized project development
+
+Learning Outcome:
+Learned professional collaborative development workflow used in software industries.

@@ -1,17 +1,67 @@
-# a = []
-# b = ""
-# print(a is b)
-# print(type(a))
+git is a version control tool 
+git used for the  track changes 
+--version tracking
+--undo changes
+--branching 
+--collaboration easy
+git tool inside our system it will be available ---
 
-# c  = int("78")
+-----------git commands----------------
 
-# print(c)
-# print(type(c))
+git init
+→ Initializes a new Git repository in the current project folder.
+వివరణ: మీరు ఒక ఫోల్డర్‌లో కొత్తగా ప్రాజెక్ట్ మొదలుపెట్టినప్పుడు, ఆ ఫోల్డర్‌ను Git ప్రాజెక్ట్‌గా మార్చడానికి దీన్ని వాడతారు.
+ఉదాహరణ: మీరు కొత్తగా ఒక నోట్‌బుక్ కొన్నప్పుడు, దాని మీద మీ పేరు రాసుకోవడం లాంటిది.
 
-"""a = (input("enter num1: "))
-b = (input("enter num2: "))
-print(a+b)"""
-a = int(10.89)
-b = 2
-c = a+b
-print(c)
+git add .
+→ Adds all files and changes to the staging area before commit.
+వివరణ: మీరు చేసిన మార్పులను "స్టేజింగ్ ఏరియా" (Staging Area) లోకి పంపడానికి ఇది వాడతారు. ఇందులో . 
+అంటే ఆ ఫోల్డర్‌లో మారిన ఫైల్స్ అన్నీ అని అర్థం.
+ఉదాహరణ: పరీక్ష రాయడానికి ముందు పేపర్లను సిద్ధం చేసుకున్నట్లు.
+
+git commit -m "message"
+→ Saves the staged changes permanently with a commit message.
+వివరణ: మీరు add చేసిన ఫైల్స్‌ను శాశ్వతంగా సేవ్ చేయడానికి ఇది వాడతారు. 
+message అనేది ఆ మార్పు ఎందుకు చేశారో చెప్పే చిన్న వివరణ.
+ఉదాహరణ: సమాధానాలు రాశాక, ఆ పేజీని పుస్తకంలో అతికించి, పైన "Chapter 1 completed" అని రాసినట్లు.
+
+git push origin main
+→ Uploads local repository changes to the remote GitHub repository.
+వివరణ: మీ కంప్యూటర్‌లో సేవ్ చేసిన (Commit చేసిన) కోడ్‌ని ఇంటర్నెట్‌లోని GitHub కి పంపడానికి ఇది వాడతారు.
+ఉదాహరణ: మీ డైరీని ఆన్‌లైన్ క్లౌడ్‌లో అప్‌లోడ్ చేయడం.
+
+git pull origin main
+→ Downloads and updates the latest changes from the remote repository.
+వివరణ: GitHub లో ఎవరైనా వేరే వాళ్ళు చేసిన మార్పులను మీ కంప్యూటర్‌లోకి తెచ్చుకోవడానికి దీన్ని వాడతారు.
+ఉదాహరణ: ఆన్‌లైన్‌లో ఉన్న మీ స్నేహితుడి నోట్స్ కాపీని మీ దగ్గరకు తెచ్చుకోవడం.
+
+git branch
+→ Displays all available branches in the repository.
+వివరణ: ప్రస్తుతం మీరు ఏ బ్రాంచ్‌లో పని చేస్తున్నారు మరియు మొత్తం ఎన్ని బ్రాంచ్‌లు ఉన్నాయి అని చూడటానికి ఇది వాడతారు.
+ఉదాహరణ: ఒక పుస్తకంలో ఎన్ని చాప్టర్లు ఉన్నాయో ఇండెక్స్ పేజీ చూసి తెలుసుకోవడం.
+
+git checkout
+→ Switches from one branch to another branch.
+వివరణ: ఒక బ్రాంచ్ నుండి ఇంకో బ్రాంచ్‌కి మారడానికి ఇది వాడతారు. (కొత్త బ్రాంచ్ కోసం git checkout -b[name] వాడాలి).
+ఉదాహరణ: పుస్తకంలో ఒక పేజీ నుండి ఇంకో పేజీకి పేజీ తిప్పడం.
+
+Example:
+git checkout feature-branch
+
+git merge
+→ Combines changes from one branch into another branch.
+వివరణ: ఒక బ్రాంచ్‌లో మీరు చేసిన మార్పులను మెయిన్ బ్రాంచ్‌లోకి కలపడానికి ఇది వాడతారు.
+ఉదాహరణ: మీరు వేరుగా రాసిన నోట్స్‌ని మెయిన్ ఫెయిర్ నోట్స్ పుస్తకంలో రాయడం
+
+Example:
+git merge feature-branch
+
+git status
+→ Shows modified, staged, and untracked files in the repository.
+వివరణ: ప్రస్తుతం మీరు ఏ ఫైల్స్ మార్చారు? ఏవి ఇంకా add చేయలేదు? అనేది తెలుసుకోవడానికి ఇది చాలా ముఖ్యం.
+ఉదాహరణ: బ్యాగులో అన్ని పుస్తకాలు ఉన్నాయా లేదా అని ఒక్కసారి చెక్ చేసుకోవడం.
+
+git log
+→ Displays commit history and previous repository activities.
+వివరణ: ఇప్పటివరకు మీరు ఏమేమి commit చేశారో, ఎప్పుడు చేశారో దాని హిస్టరీని చూడటానికి ఇది వాడతారు.
+ఉదాహరణ: గతంలో మీరు ఎప్పుడెప్పుడు ఏ చాప్టర్లు రాశారో చూసే 'చరిత్ర' (History).
