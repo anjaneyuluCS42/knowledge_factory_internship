@@ -1,0 +1,135 @@
+Overall Architecture
+Frontend
+   ↓
+Backend/API
+   ↓
+Database
+----------------------------------
+Frontend
+What is Frontend?
+
+Frontend means:
+
+User Interface (UI)
+
+What users see.
+
+Technologies
+HTML
+CSS
+JavaScript
+React
+Angular
+Responsibilities
+
+✅ buttons
+✅ forms
+✅ pages
+✅ user interaction
+
+Real-Time Example
+--------------------------------------
+Instagram frontend:
+
+feed UI
+reels UI
+profile UI
+Frontend Flow
+User clicks button
+       ↓
+Frontend sends API request
+Backend
+------------------------------------------
+What is Backend?
+
+Backend means:
+
+Server-side logic
+
+Processes application logic.
+
+Technologies
+Python
+Node.js
+Java
+Spring Boot
+Responsibilities
+
+- APIs
+- authentication
+- business logic
+- database communication
+
+Real-Time Example
+--------------------------
+Instagram backend:
+login verification
+comments processing
+notifications
+Backend Flow
+Frontend Request
+      ↓
+Backend Processing
+      ↓
+Database Query
+      ↓
+Response
+-------------------------------
+Database
+What is Database?
+
+Database stores:
+
+application data
+Technologies
+MySQL
+MongoDB
+PostgreSQL
+Stores
+
+- users
+- passwords
+- chats
+- products
+- orders
+
+Real-Time Example----------------------
+
+Instagram database stores:
+user accounts
+posts
+messages
+Complete Real-Time Workflow
+Example — Login System
+
+User enters username/password
+        ↓
+Frontend sends request
+        ↓
+Backend validates credentials
+        ↓
+Database checks user details
+        ↓
+Backend sends response
+        ↓
+Frontend displays success/failure
+
+---------------------------------
+Example — Amazon Product Search
+User searches product
+       ↓
+Frontend request
+       ↓
+Backend API
+       ↓
+Database product search
+       ↓
+Results returned
+       ↓
+Frontend displays products
+-----------------------------------
+Simple Analogy
+Component     -     Real-Life Analogy
+Frontend	 -     Restaurant waiter
+Backend	     -    Kitchen chef
+Database	  -   Food storage
