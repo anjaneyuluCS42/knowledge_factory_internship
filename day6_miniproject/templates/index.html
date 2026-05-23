@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Country Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">
+            🌍 Country Information Dashboard
+        </h1>
+
+        <form method="POST" class="search-form">
+
+            <input
+                type="text"
+                name="country"
+                placeholder="Enter Country Name"
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+        {% if country %}
+
+        <div class="country-card">
+
+            <div class="flag">
+                {{ country.flag }}
+            </div>
+
+            <h2 class="country-name">
+                {{ country.name }}
+            </h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+                    <span>Capital</span>
+                    <h3>{{ country.capital }}</h3>
+                </div>
+
+                <div class="info-box">
+                    <span>Currency</span>
+                    <h3>{{ country.currency }}</h3>
+                </div>
+
+                <div class="info-box">
+                    <span>Population</span>
+                    <h3>{{ country.population }}</h3>
+                </div>
+
+                <div class="info-box">
+                    <span>Region</span>
+                    <h3>{{ country.region }}</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="languages-card">
+
+            <h2>
+                Popular Languages
+            </h2>
+
+            <div class="language-list">
+
+                {% for language in country.languages %}
+
+                <div class="language-pill">
+                    {{ language }}
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        <div class="ai-card">
+
+            <h2>
+                Country Insights
+            </h2>
+
+            <div class="ai-content">
+
+                {% for line in ai_data.splitlines() %}
+
+                    {% if line.strip() %}
+
+                    <div class="ai-line">
+
+                        <span class="bullet">
+                            •
+                        </span>
+
+                        {{ line }}
+
+                    </div>
+
+                    {% endif %}
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
