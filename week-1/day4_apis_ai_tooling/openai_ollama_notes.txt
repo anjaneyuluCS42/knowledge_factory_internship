@@ -1,0 +1,27 @@
+# ---Topic 1: Ollama & Local AI Basics----
+Core Concepts & Benefits
+What it is: Ollama is an open-source tool that simplifies downloading, managing, and running Large Language Models (LLMs) locally on your personal computer
+.
+Privacy & Security: Because the models run entirely on your own hardware, your sensitive data is never sent to external cloud servers
+.
+Cost & Latency: Running local models eliminates ongoing cloud API costs (like paying per token) and reduces network latency, providing faster responses for interactive applications
+.
+Hardware Efficiency: The keep_alive parameter is highly impactful for performance; setting it to "24h" keeps the model loaded in your computer's memory, eliminating 4-8 second "cold reload" delays between requests
+.
+Interacting with Ollama
+Command Line Interface (CLI): Ollama provides a unified CLI to manage models
+. Common commands include ollama run <model> to chat, ollama list to view downloaded models, ollama rm <model> to delete, and ollama pull <model> to download a new model from the library
+.
+REST API: Ollama automatically runs a background server at http://localhost:11434
+. You can interact with it programmatically using endpoints like /api/generate (for text completion) and /api/chat (for conversational history)
+. By default, the API streams responses word-by-word, but you can pass "stream": false in your payload to get the entire response at once
+.
+LangChain Integration: When building Python or JavaScript applications, you can use the ChatOllama class for modern chat models, agent workflows, and tool calling, or the OllamaLLM class for older, legacy completion models
+.
+Customizing Models
+You can fine-tune how an Ollama model behaves by creating a Modelfile (a text file with no extension)
+.
+In the Modelfile, you define the base model (e.g., FROM llama3.2), set parameters (e.g., PARAMETER temperature 0.3 to make it less creative and more factual), and provide a core prompt (SYSTEM "You are a smart assistant...")
+.
+You then compile this customized model using the CLI command ollama create <new_name> -f Modelfile
+.

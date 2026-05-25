@@ -1,0 +1,19 @@
+1. Explain Python for beginners.
+
+2. Explain JavaScript using real-world examples.
+
+3. Act as a coding teacher and explain loops.
+
+4. Explain Artificial Intelligence in simple words.
+
+5. Translate "Hello, how are you?" into Telugu.
+
+6. Write a professional email for internship application.
+
+7. Summarize cloud computing in 5 lines.
+
+8. Explain difference between AI and Machine Learning.
+
+9. Write HTML code for a simple login form.
+
+10. Explain APIs for beginners.

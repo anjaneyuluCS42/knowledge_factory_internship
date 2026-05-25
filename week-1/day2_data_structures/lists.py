@@ -8,11 +8,11 @@ print(sorted(data,reverse=True))
 print(data)
 data.sort(reverse=True) 
 print(data) # descending order
-#print("Final:" ,data)
-# print(f"List: {data}")
+print("Final:" ,data)
+print(f"List: {data}")
 
-# #example 2
-# marks =[10,20,30,40]
-# marks.pop()               # to remove number in last
-# marks.sort(reverse=False) # ascending order
-# print("Final marks",marks)
+#example 2
+marks =[10,20,30,40]
+marks.pop()               # to remove number in last
+marks.sort(reverse=False) # ascending order
+print("Final marks",marks)

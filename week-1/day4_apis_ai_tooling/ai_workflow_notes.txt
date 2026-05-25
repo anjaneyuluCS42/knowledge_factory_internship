@@ -1,0 +1,41 @@
+AI Workflows & Architecture
+Retrieval-Augmented Generation (RAG)
+The Problem: LLMs suffer from "hallucinations" (making things up) and lack knowledge of your private or recent data because they only know what they were originally trained on
+.
+The Solution: RAG solves this by injecting your specific documents into the LLM's prompt
+.
+The Workflow:
+Ingestion & Splitting: Documents (like PDFs) are loaded and chopped into small, manageable chunks of text
+.
+Embedding: An embedding model (like nomic-embed-text) translates these text chunks into vectors (high-dimensional numbers representing semantic meaning)
+.
+Vector Store: These vectors are saved in a specialized database, such as ChromaDB
+.
+Retrieval & Generation: When a user asks a query, the query is also vectorized. The system searches the vector database for the most mathematically similar document chunks, and packages those chunks together with the prompt for the LLM to read and generate an accurate answer
+.
+LangChain & LangGraph Frameworks
+LangChain Expression Language (LCEL): LangChain uses a pipe operator (|) syntax to chain different workflow steps together, providing built-in features like batching, asynchronous execution, and retries
+.
+LangGraph for Agents: While LangChain is great for linear pipelines, LangGraph is used for stateful, multi-turn AI agents. It handles the looping execution, tool routing, and accumulating message history required for an AI to make independent decisions over time
+.
+Agent-Based Workflows (The Swarm Approach)
+Complex workflows can be divided among specialized AI "agents" that delegate tasks to one another using frameworks like OpenAI's Swarm (which can be overridden to use local Ollama models)
+.
+Real-World Example (Recruiter Agency): Instead of one AI trying to do everything, a workflow is structured with an Orchestrator Agent that acts as a manager
+. The Orchestrator delegates specific tasks to:
+An Extractor Agent to pull structured data from a resume PDF
+.
+A Matcher Agent to compare the extracted skills against available job postings
+.
+A Screener Agent to evaluate qualifications and generate a screening report
+.
+A Recommender Agent to aggregate the analysis and provide final candidate recommendations
+
+
+#  Types of AI Workflows
+Workflow Type	Example
+Chat Workflow	Chatbot
+RAG Workflow	PDF QA Bot
+Agent Workflow	AI Assistant
+Automation Workflow	Email Automation
+Image Workflow	AI Image Generator

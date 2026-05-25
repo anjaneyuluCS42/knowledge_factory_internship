@@ -22,7 +22,7 @@
 - branching_notes.txt
 - merge_conflict_demo.txt
 - workflow_notes.txt
-- screenshots
+- screenshots/
 
 ## Learning Outcome
 Learned professional Git and GitHub workflow concepts used in collaborative software development environments.

@@ -37,7 +37,8 @@ class addition:
     def Additions(self,a,b):
         d = a*b
         print(d)
-addition().Additions(1,2)
+a1 = addition()
+a1.Additions(1,2)
 
 # example3
 class cars:
@@ -61,12 +62,13 @@ class cars:
     name = "Fortuner"
     color = "black"
 
-    def __init__(xyz): 
-        print(xyz.name,xyz.color)     # Here self represents car1 "object"
+    def __init__(self): 
+        print(self.name,self.color)     # Here self represents car1 "object"
         print( "70km/hr")
 
-    def speed (xyz,a):
+    def speed (self,a):
         print(a ,"95km/hr")
+        
 car1 = cars()
 car1.speed("top speed")
 # car1 --> {name : "Fortuner",color: "black,speed()"}  objects stores like this

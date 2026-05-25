@@ -14,7 +14,7 @@ class Bank:
         
 
 b = Bank()
-# b.amount =0    here we accessing amount from outside of class
+b.amount =0    #here we accessing amount from outside of class
 deposit = int(input("Enter your amount: "))
 b.deposit_amount(deposit)
 

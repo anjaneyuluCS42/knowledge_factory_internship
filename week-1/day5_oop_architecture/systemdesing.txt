@@ -1,0 +1,90 @@
+# ---- Planning software architecture---------
+
+Real-Time Example
+
+Food Delivery App:
+
+frontend
+backend
+database
+payment gateway
+APIs
+-------------------------------------------
+Real-Time Example — Instagram
+
+System Design Includes:
+
+Frontend
+
+Displays:
+
+posts
+profile
+reels
+
+Backend
+Handles:
+authentication
+APIs
+likes/comments
+
+Database
+Stores:
+users
+posts
+chats
+
+Simple System Design Flow-------------
+User
+ ↓
+Frontend
+ ↓
+Backend/API
+ ↓
+Database
+ ↓
+Response
+ ↓
+Frontend Display
+-----------------------------------
+
+Components of System Design
+Client
+User device:
+mobile app
+website
+Server
+
+Processes requests.
+Database
+Stores data.
+APIs
+Communication bridge.
+
+Example-----------------
+
+When user logs into Instagram:
+
+Frontend → Backend API → Database
+
+Backend checks:
+username
+password
+Then sends response.---------------
+
+Important System Design Concepts----------------
+Scalability
+Can app handle millions of users?
+
+Example:
+YouTube
+Instagram
+Reliability
+
+Application should work continuously.------------------
+Security
+Protect:
+passwords
+payment details
+Performance
+Fast response time.
