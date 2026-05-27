@@ -1,0 +1,185 @@
+HTML INTERVIEW QUESTIONS WITH ANSWERS 
+ 
+BASIC QUESTIONS : 
+1. What is HTML? 
+HTML (HyperText Markup Language) is the standard language used to create 
+and structure content on the web. It uses a series of elements and tags to 
+define the structure and presentation of text, images, and other multimedia. 
+ 
+2. What are HTML tags? 
+HTML tags are used to create elements on a web page. Tags usually come in 
+pairs, with an opening tag (e.g., <p>) and a closing tag (e.g., </p>), and they 
+enclose content to define its structure or behavior. 
+ 
+3. What is the purpose of the <head> and <body> tags in HTML? 
+The <head> tag contains metadata and links to resources like stylesheets and 
+scripts, which are essential for the page but not displayed directly. The 
+<body> tag contains the actual content that appears on the webpage. 
+ 
+ 
+4. What is the difference between an element and a tag in HTML? 
+A tag is the markup used to define the start or end of an HTML element 
+(e.g., <div>). An element includes the tags and the content between them 
+(e.g., <div>Content</div>). 
+ 
+5. What is the purpose of the <doctype> declaration in HTML? The <!DOCTYPE> declaration specifies the HTML version being used and 
+ensures that the browser renders the page in standards-compliant mode, 
+preventing it from entering "quirks mode." 
+6. How do you create a hyperlink in HTML? 
+You can create a hyperlink using the <a> tag. Example: <a 
+href="https://example.com">Click here</a>. 
+ 
+7. What are the differences between block-level and inline elements in 
+HTML? 
+Block-level elements (e.g., <div>, <p>) take up the full width of their 
+container and start on a new line. Inline elements (e.g., <span>, <a>) take up 
+only as much width as needed and do not start on a new line. 
+ 
+8. What are semantic HTML elements? Give examples. 
+Semantic HTML elements clearly describe their meaning in a human- and 
+machine-readable way. Examples include <header>, <footer>, <article>, and 
+<section>. 
+ 
+ 
+9. How do you create a table in HTML? 
+A table is created using the <table> tag, with rows defined by <tr>, and cells 
+within rows by <td> for data and <th> for headers. Example: 
+<table> 
+<tr> 
+<th>Header 1</th> 
+<th>Header 2</th> 
+</tr> 
+<tr> <td>Data 1</td> 
+<td>Data 2</td> 
+</tr> 
+</table> 
+ 
+ 
+10. What is the purpose of the <meta> tag in HTML? 
+The <meta> tag provides metadata about the HTML document, such as 
+character set, author, and viewport settings, which are used by browsers and 
+search engines. 
+ 
+ 
+ 
+INTERMEDIATE QUESTIONS : 
+ 11. How do you include an image in an HTML document? 
+You can include an image using the <img> tag, specifying the src attribute 
+with the image URL and the alt attribute for alternative text. 
+Example: 
+<img src="image.jpg" alt="Description of the image"> 
+ 
+ 
+12. What is the purpose of the <form> tag in HTML? 
+The <form> tag is used to create a form for collecting user input. It can 
+contain input elements like text fields, checkboxes, radio buttons, and 
+submit buttons. 
+ 
+13. How do you create a dropdown list in HTML? A dropdown list is created using the <select> tag, with each option defined 
+by an <option> tag. 
+Example: 
+<select> 
+<option value="1">Option 1</option> 
+<option value="2">Option 2</option> 
+</select> 
+ 
+ 
+14. What is the difference between <div> and <span> tags? 
+<div> is a block-level element used for grouping content, while <span> is an 
+inline element used for styling a portion of text or content within a block- 
+level element. 
+ 
+15. How can you create a responsive layout in HTML? 
+A responsive layout can be created using CSS media queries, flexible grid 
+systems (like CSS Grid or Flexbox), and setting the viewport meta tag for 
+scaling on different devices. 
+ 
+16. What is the purpose of the <iframe> tag in HTML? 
+The <iframe> tag is used to embed another HTML document within the 
+current document. It is often used to embed videos, maps, or other content 
+from different sources. 
+ 
+17. How do you embed multimedia (audio and video) in an HTML 
+document?  Multimedia can be embedded using the <audio> and <video> tags. 
+Example: 
+<audio controls> 
+<source src="audio.mp3" type="audio/mpeg"> 
+</audio> 
+<video controls> 
+<source src="video.mp4" type="video/mp4"> 
+</video> 
+ 
+ 
+18. What are the different types of lists available in HTML? 
+HTML supports ordered lists (<ol>), unordered lists (<ul>), and definition lists 
+(<dl>). Each list type uses corresponding child elements like <li> for items 
+and <dt>/<dd> for definitions. 
+ 
+19. How do you create a favicon for a website? 
+A favicon is created by linking an icon file (usually .ico, .png, or .svg) using the 
+<link> tag in the <head> section. 
+Example: 
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+ 
+ 
+20. How can you add comments in an HTML document? 
+Comments in HTML are added using the <!-- Comment --> syntax. These 
+comments are not rendered by the browser. Advanced HTML Questions 
+ 21. What is the role of the <canvas> tag in HTML? 
+The <canvas> tag is used for drawing graphics, animations, or other visual 
+content via JavaScript. It provides a space for dynamic, scriptable rendering 
+of 2D shapes and images. 
+ 
+22. How do you optimize HTML for SEO? 
+HTML can be optimized for SEO by using semantic tags, descriptive alt 
+attributes for images, meaningful URLs, proper heading hierarchy, meta tags 
+for keywords and descriptions, and structured data like schema.org. 
+ 
+23. What is the difference between <script>, <noscript>, and <template> 
+tags in HTML? 
+<script> is used to include or reference JavaScript. <noscript> is used to 
+provide content for users who have JavaScript disabled. <template> is used 
+to define HTML fragments that can be cloned and used later by JavaScript, 
+but are not rendered when the page initially loads. 
+ 
+24. How do you implement accessibility features in HTML? 
+Accessibility in HTML is implemented by using semantic tags, aria-* 
+attributes for assistive technologies, meaningful alt text for images, keyboard 
+navigability, and ensuring proper contrast ratios and focus management. 
+ 
+25. What is the use of the data- attribute in HTML? The data- attribute is used to store custom data directly on HTML elements. 
+This data can be accessed via JavaScript to create dynamic, interactive 
+content without affecting the element’s structure. 
+26. Explain the difference between localStorage, sessionStorage, and 
+cookies in HTML5. 
+localStorage stores data with no expiration date, sessionStorage stores data 
+for the duration of the page session, and cookies store small pieces of data 
+with a specified expiration time and are sent with every HTTP request. 
+  
+27. How do you handle forms with multiple inputs and file uploads in 
+HTML? 
+Forms with multiple inputs can be managed using the <form> tag with 
+various input elements. File uploads are handled using <input type="file">, 
+and server-side scripts typically process the uploaded files. 
+ 
+28. What is the purpose of the <picture> tag in HTML? 
+The <picture> tag is used to provide multiple versions of an image for 
+different display conditions, like screen sizes or resolutions. It allows for 
+responsive image loading using <source> elements inside it. 
+ 
+29. How does the <progress> tag differ from the <meter> tag in HTML? 
+The <progress> tag represents the completion progress of a task (like a 
+download), showing a range from 0 to 1. The <meter> tag represents a scalar 
+measurement within a known range, such as disk usage 
+ 
+30. What are the new form elements introduced in HTML5? HTML5 introduced new form elements like <input type="email">, <input 
+type="date">, <input type="number">, <input type="range">, and <input 
+type="color">, along with new attributes like placeholder, autofocus, and 
+required. 
+31. How do you use the <link> tag for preloading and prefetching resources 
+in HTML? 
+The <link> tag can use rel="preload" to preload critical resources and 
+rel="prefetch" to load resources that might be needed soon, improving page 
+performance. 
+Example: 
+<link rel="preload" href="style.css" as="style 
