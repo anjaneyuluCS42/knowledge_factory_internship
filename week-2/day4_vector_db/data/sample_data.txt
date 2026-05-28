@@ -1,0 +1,7 @@
+Artificial Intelligence is transforming the world.
+
+Machine Learning is a subset of AI.
+
+Semantic search understands meanings.
+
+Vector databases store embeddings.
