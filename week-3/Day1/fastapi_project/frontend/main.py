@@ -12,12 +12,15 @@ def greet():
 
 products = [
     Product(id =1, name ="phone",description ="budget mobile",price =99,quantity =10),
-    Product(id = 2,name = "laptop",description ="gaming laptop",price =999,quantity =5)
+    Product(id = 2,name = "laptop",description ="gaming laptop",price =999,quantity =5),
+    Product(id = 3,name = "tablet",description ="working tablet",price =899,quantity =8)
 ]
 
 
 @app.get("/products")
 def get_all_products():
+    #db connectio
+    #query
     return products
 
 
@@ -44,34 +47,46 @@ def update_products(id: int, product: Product):
     for i in range(len(products)):
         if products[i].id == id:
             products[i] = product
+            # return products[i]
             return "product added successfully"
 
-
-#example 2
-
-students=[
-    Student(1,"anji",22,"CSE"),
-    Student(2,"krishna",23,"ECE"),
-    Student(3,"Hari",24,"Civil")
-]
-
-@app.get("/student")
-def get_stu_detail():
-    return students
- 
-@app.get("/student/{id}")
-def get_student_detail(id:int):
-    for student in students:
-        if student.id == id:
-            return student
-
-
+# delete
+@app.delete("/product")
+def delet_profuct(id: int):
+    for i in range(len(products)):
+        if products[i].id == id:
+            del products[i]
+            return "product deleted"
     return "product not found"
 
-# @app.post("/student")
-# def add_stdent_details(student: Student):
-#     students.append(student)
-#     return student
+
+
+
+# #example 2
+
+# students=[
+#     Student(1,"anji",22,"CSE"),
+#     Student(2,"krishna",23,"ECE"),
+#     Student(3,"Hari",24,"Civil")
+# ]
+
+# @app.get("/student")
+# def get_stu_detail():
+#     return students
+ 
+# @app.get("/student/{id}")
+# def get_student_detail(id:int):
+#     for student in students:
+#         if student.id == id:
+#             return student
+
+
+#     return "product not found"
+
+# # @app.post("/student")
+# # def add_stdent_details(student: Student):
+# #     students.append(student)
+# #     return student
 
 
 
