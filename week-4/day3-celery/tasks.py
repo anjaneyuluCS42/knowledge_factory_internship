@@ -1,6 +1,6 @@
 from celery_worker import celery_app
 import smtplib
-from email.mime.text import MIMEText
+# from email.mime.text import MIMEText
 from dotenv import load_dotenv
 import os
 

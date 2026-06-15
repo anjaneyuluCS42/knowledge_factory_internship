@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Chat</title>
+</head>
+<body>
+
+<input type="text" id="message">
+<button onclick="sendMessage()">Send</button>
+
+<ul id="messages"></ul>
+
+<script>
+
+let ws = new WebSocket(
+    "ws://127.0.0.1:8000/ws?token=admin123"
+)
+
+ws.onmessage = function(event){
+
+    let li = document.createElement("li")
+    li.textContent = event.data
+
+    document.getElementById("messages").appendChild(li)
+}
+
+function sendMessage(){
+
+    let input = document.getElementById("message")
+
+    ws.send(input.value)
+
+    input.value = ""
+}
+
+</script>
+
+</body>
+</html>
